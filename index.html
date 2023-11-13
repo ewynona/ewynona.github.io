@@ -7,7 +7,7 @@
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
   <script>
     let tg = window.Telegram.WebApp;
-    let mario = document.getElementById("mario");
+    let mario = document.querySelector('.image-container');
     tg.expand();
 
     mario.addEventListener("click", () => {
@@ -17,9 +17,9 @@
   </script>
 </head>
 <body>
-  <div class="image-container" id="mario">
+  <div class="image-container">
     <div class="rounded-image mario"></div>
-    <div class="image-title">Mario1</div>
+    <div class="image-title">Mario</div>
   </div>
   <div class="image-container">
     <div class="rounded-image albert"></div>
