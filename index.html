@@ -1,26 +1,52 @@
 <!DOCTYPE html>
-<html>
- <head>
-  <meta charset="utf-8">
-  <title>Фотографии</title>
-  <style>
-   .thumb img  {
-        top: 383px;
-        left: 344px;
-        width: 100%;
-        height: auto;
-        background: transparent url('img/mario.png') 0% 0% no-repeat padding-box;
-        box-shadow: 0px 15px 15px #00000029;
-        border: 3px solid #27A7E7;
-        border-radius: 50px;
-        opacity: 1;
-   }
-  </style>
- </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #F5F5F5
+            margin: 0;
+            font-family: 'SF Pro', sans-serif;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 10px; /* добавлен отступ вокруг картинки и текста */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            border: 3px solid #27A7E7;
+            border-radius: 50px;
+        }
+
+        p {
+            text-align: centre;
+            font: normal normal bold 40px/48px SF Pro;
+            letter-spacing: 0px;
+            color: #27A7E7;
+            opacity: 1;
+        }
+    </style>
+    <title>Telegram Web App</title>
+</head>
 <body>
-    <p class="thumb">
-        <img src="Mario.png" alt="">
-        <img src="AlbertEinstein.png" alt="">
-    </p>
+    <div class="image-container">
+        <img src="Mario.png" alt="Mario">
+        <p>Марио</p>
+    </div>
+    <div class="image-container">
+        <img src="AlbertEinstein.png" alt="Albert">
+        <p>Альберт Энштейн</p>
+    </div>
+    <!-- Добавьте другие изображения с их названиями по аналогии -->
 </body>
 </html>
