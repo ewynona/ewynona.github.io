@@ -7,21 +7,19 @@
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
   <script>
     let tg = window.Telegram.WebApp;
-    let character = document.getElementById("mario");
-
+    let mario = document.getElementById("mario");
     tg.expand();
 
-    function showHello() {
+    mario.addEventListener("click", () => {
       tg.close();
-    }
+    });
   </script>
 </head>
 <body>
-  <div class="image-container" onclick="showHello()">
+  <div class="image-container" id="mario">
     <div class="rounded-image mario"></div>
     <div class="image-title">Mario</div>
   </div>
-  <button id="mario">Кнопка</button>
   <div class="image-container">
     <div class="rounded-image albert"></div>
     <div class="image-title">Albert</div>
