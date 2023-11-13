@@ -11,17 +11,17 @@
 
     tg.expand();
 
-    $('.image-container').on('click', function() {
-      tg.close();
-    });
+    function showHello() {
+      alert("Hello");
+    }
   </script>
 </head>
 <body>
-  <div class="image-container">
+  <div class="image-container" onclick="showHello()">
     <div class="rounded-image mario"></div>
     <div class="image-title">Mario</div>
   </div>
-  <button id="mario">Кнопка123</button>
+  <button id="mario">Кнопка</button>
   <div class="image-container">
     <div class="rounded-image albert"></div>
     <div class="image-title">Albert</div>
